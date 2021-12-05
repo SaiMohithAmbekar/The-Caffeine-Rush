@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+:root {
+    --error-color: red;
+    --success-color: rgb(3, 199, 3);
+    --warning-color: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Cafe-background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(158,114,15) 200%);
+}
+
+.form {
+    padding: 15px 20px;
+}
+
+h2 {
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.form-elements {
+    margin-bottom: 5px;
+}
+
+.form-elements label {
+    display: block;
+    color: rgb(75, 74, 74);
+    margin-bottom: 5px;
+}
+
+.form-elements input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-elements input:focus {
+    outline: none;
+}
+
+.form-elements.error input {
+    border-color: var(--error-color);
+}
+
+.form-elements.success input {
+    border-color: var(--success-color);
+}
+
+small {
+    color: var(--error-color);
+}
+
+/* button */
+
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #7a4606;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 16px;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition:background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    background: #b67310;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
